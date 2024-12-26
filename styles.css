@@ -1,0 +1,125 @@
+/* Основные стили */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9; /* Светлый фон */
+    color: #333333; /* Темный текст */
+    margin: 0;
+    padding: 0;
+}
+
+/* Заголовки */
+h1, h2 {
+    font-family: 'Arial', sans-serif;
+    color: #2c3e50; /* Темный оттенок серого для заголовков */
+    font-weight: bold;
+}
+
+/* Стили для контейнера */
+.container {
+    padding: 40px 15px;
+}
+
+/* Стили для меню навигации */
+.navbar {
+    background-color: #ffffff; /* Белый фон для меню */
+    padding: 10px 0;
+    border-bottom: 2px solid #2c3e50; /* Темно-серая линия под меню */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #333333 !important; /* Темный текст */
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #2c3e50 !important; /* Темно-серый цвет при наведении */
+}
+
+/* Стили для заголовков на страницах */
+section h1, section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Стили для секций с контентом */
+section.bg-light {
+    background-color: #ffffff; /* Белый фон для секции */
+    border: 2px solid #ecf0f1; /* Светло-серая рамка */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для карточек */
+.card {
+    background-color: #ffffff; /* Белый фон карточки */
+    border: 2px solid #ecf0f1; /* Светло-серая рамка */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    border-radius: 8px 8px 0 0;
+    max-height: 250px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 25px;
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.card-title {
+    color: #2c3e50; /* Темно-серый для заголовков в карточках */
+    font-weight: 700;
+}
+
+/* Подсветка для карточек при наведении */
+.card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Стили для кнопок и ссылок */
+.navbar-nav .nav-link {
+    color: #333333 !important;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #2c3e50 !important;
+}
+
+/* Стили для страницы */
+footer {
+    background-color: #ffffff;
+    color: #333333;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    border-top: 2px solid #ecf0f1;
+}
+
+/* Для мобильных устройств */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 0.9rem;
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+
+    .container {
+        padding: 20px 10px;
+    }
+}
